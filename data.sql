@@ -1,25 +1,25 @@
 use sprint_api;
 
-insert into app_role(is_deleted,name)
+insert into app_roles(is_deleted,name)
 value
 (0,'ROLE_ADMIN'),
 (0,'ROLE_CUSTOMER');
 
-insert into app_user(user_name,password,email,is_online,is_deleted)
+insert into app_users(user_name,password,email,is_online,is_deleted)
 value
 ('hanhntm','$2a$10$x6LfETPWZFvz6iZ6.R73PurqJxU81mvnzDadmIHLAby0wPj9KSXzW', 'hanh@gmail.com',0,0 ),
 ('duongndt','$2a$10$x6LfETPWZFvz6iZ6.R73PurqJxU81mvnzDadmIHLAby0wPj9KSXzW', 'duong@gmail.com',0,0 ),
 ('liendtm','$2a$10$x6LfETPWZFvz6iZ6.R73PurqJxU81mvnzDadmIHLAby0wPj9KSXzW', 'lien@gmail.com',0,0 ),
 ('thienbb','$2a$10$x6LfETPWZFvz6iZ6.R73PurqJxU81mvnzDadmIHLAby0wPj9KSXzW', 'thien@gmail.com',0,0 );
 
-insert into category(name)
+insert into categories(name)
 value
 ('Son'),
 ('Nước Hoa'),
 ('Make Up'),
 ('SkinCare');
 
-insert into product(name, price, brand, origin, quantity, description,id_category)
+insert into products(name, price, brand, origin, quantity, description,id_category)
 value
 ('Son Bbia Allure Liquid Subquest', 160000, 'Bbia', 'Hàn Quốc', 20,'Son Kem Lì, Lên Màu Siêu Chuẩn Bbia Last Velvet Lip Tint là dòng son kem lì của thương hiệu Bbia, với nhiều phiên bản son liên tục được hãng cho ra mắt, thương hiệu Bbia cực kỳ nhanh nhạy khi nắm bắt xu hướng màu son hot nhất hiện nay với bảng màu vô cùng thời thượng. Son lì nhưng mịn như nhung, rất nhẹ và mướt môi, không làm khô môi hay lộ vân môi, lớp finish lì tuyệt đối nhưng sau khi ăn sẽ để lại lớp màu hồng đỏ tiệp lại trên môi cực xinh.',1),
 ('Son Mac Patrick Starr Mamastarr Limited Edition ', 690000, 'Mac', 'New York', 20,'Son Mac – Không những nổi tiếng ở Mỹ mà khắp các nước trên thế giới, ở Việt Nam Son MAC được biết đến rộng rãi, với bất kỳ chị em nào dùng son cũng thường sở hữu một cây son Mac đủ để cho thấy son Mac nổi tiếng thế nào. Với chất son siêu lì lâu trôi lên màu chuẩn, MAC còn sở hữu bảng màu son Mac cực kỳ đa dạng cho chị em phụ nữ thoả sức chọn lựa.',1),
@@ -88,7 +88,7 @@ value
 
 
 
-insert into image (name, id_product)
+insert into images(name, id_product)
 value
 ('https://firebasestorage.googleapis.com/v0/b/cosmetic-c7a67.appspot.com/o/cosmetic%2Fson_4.jpeg?alt=media&token=7f0a9782-c027-4bc2-8afb-4b1184524a5b', 1), 
 ('https://kenperfume.com/wp-content/uploads/2023/02/SMXF20_1.webp', 1), 
@@ -281,7 +281,7 @@ value
 ('https://picare.vn/wp-content/uploads/2022/05/Oil-correct-5.png', 64);
 
 
-insert into customer(birthday,name,  gender, identity, phone, address, id_user)
+insert into customers(birthday,name,  gender, identity, phone, address, id_user)
 value
 ('2000-10-29','Mỹ Hạnh', 0, '049306002001','0766513500','Quảng Nam',1),
 ('1999-10-12','Trùng Dương',1,'049307002201','0766513501','Quảng Nam',2),
